@@ -5,10 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="shortcut icon" href="./img/favicon.ico">
   <title>Santa Fe - 도심형 패밀리 SUV의 혁신적인 진화</title>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -20,17 +25,17 @@
     <header>
       <ul id="mainMenu">
         <li>SANTA FE</li>
-        <li>DESIGN</li>
-        <li>SAFETY</li>
-        <li>TECHNOLOGY</li>
-        <li>PERFORMANCE</li>
-        <li>GALLERY</li>
+        <li><span>DESIGN</span></li>
+        <li><span>SAFETY</span></li>
+        <li><span>TECHNOLOGY</span></li>
+        <li><span>PERFORMANCE</span></li>
+        <li><span>GALLERY</span></li>
 
-        <li>CUSTOMER
-          <!-- <ul id="subMenu">
-            <li>차량부품상담</li>
-            <li>1:1 문의하기</li>
-          </ul> -->
+        <li id="customMenu"><span>CUSTOMER</span>
+          <ul id="subMenu">
+            <li><span>차량부품상담</span></li>
+            <li><span>1:1 문의하기</span></li>
+          </ul>
         </li>
       </ul>
     </header>
@@ -38,7 +43,7 @@
 
     <section>
       <div id="videoSection">
-        <video src="santafe.webm" autoplay muted loop></video>
+        <video src="./video/main.webm" autoplay muted loop></video>
         <div id="videoText">
           <h1 id="titleText">SANTA FE</h1>
           <h3 id="subText">패밀리 SUV의 진화</h3>
@@ -53,12 +58,12 @@
       <div id="gallerySection">
         <div class="swiper-container">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="img/galleryImg01.jpg"></div>
-            <div class="swiper-slide">gallery 2</div>
-            <div class="swiper-slide">gallery 3</div>
-            <div class="swiper-slide">gallery 4</div>
-            <div class="swiper-slide">gallery 5</div>
-            <div class="swiper-slide">gallery 6</div>
+            <div class="swiper-slide"><img src="./img/gallery/galleryImg01.jpg"></div>
+            <div class="swiper-slide"><img src="./img/gallery/galleryImg02.jpg"></div>
+            <div class="swiper-slide"><img src="./img/gallery/galleryImg03.jpg"></div>
+            <div class="swiper-slide"><img src="./img/gallery/galleryImg04.jpg"></div>
+            <div class="swiper-slide"><img src="./img/gallery/galleryImg05.jpg"></div>
+            <div class="swiper-slide"><img src="./img/gallery/galleryImg06.jpg"></div>
           </div>
           <div class="swiper-pagination"></div>
 
@@ -101,16 +106,12 @@
             <p>강렬하지만 은은한 우아함이 느껴지는 실루엣과 부드럽게 이어지는<br /> 후면부 디자인을 더해 도심형 프리미엄 SUV의 스타일을 완성합니다.</p>
           </div>
 
-          <div class="innerBox innerBoxImg">
-            <!-- 이미지 넣기 -->
-          </div>
+          <div class="innerBox innerBoxImg01"></div>
         </div>
 
         <div class="outerBox">
-          <div class="innerBox innerBoxImg">
-            <!-- 이미지 넣기 -->
-          </div>
-          <div class="innerBox">
+          <div class="innerBox innerBoxImg02"></div>
+          <div id="interiorBox" class="innerBox">
             <h1>싼타페만의 공간 디자인</h1>
             <p>안락한 시트 디자인과 다양한 수납공간 등을 통해 운전자는<br /> 물론 탑승자의 사용성과 감성적 만족감을 극대화하였습니다.</p>
           </div>
@@ -124,7 +125,9 @@
       <div id="safetySection">
         <div class="sectionTitle">SAFETY<br /><span>Hyundai SmartSense</span></div>
         <div id="safetyVideoWrap">
-          <!-- 비디오 넣기 -->
+          <video src="./video/safety01.mp4" muted controls></video>
+          <video class="on" src="./video/safety02.mp4" muted controls></video>
+          <video class="on" src="./video/safety03.mp4" muted controls></video>
         </div>
 
         <div id="safetyTitle">
@@ -137,8 +140,9 @@
           <ul id="safetyContent">
             <li>윈드실드 글라스에 전방 감지 센서(전방 카메라 또는 전방 카메라+전방 레이더)를 통하여 전방 차량/보행 거리 및 상대속도를 판단하여<br />충돌 위험 시 경고문 표시 또는 경고음 등으로
               위험을 운전자에게 알려주며, 필요 시 브레이크를 작동시켜 피해를 줄여줍니다</li>
-            <li>고속도로 본선 주행 시 전방 차량과의 거리, 차선 정보, 내비게이션 정보를 이용하여 차량 속도를 제어는 물론 차로 유지를 보조해줍니다.</li>
-            <li>스마트 크루즈 작동 중 고속도로/도시고속도로/자동차전용 도로 내 안전구간 진입 시, 감속 제어를 통해 주행 편의 제공합니다.<br />또한 곡선 구간 진입 시, 감속 제어를 통해 주행
+            <li class="on">고속도로 본선 주행 시 전방 차량과의 거리, 차선 정보, 내비게이션 정보를 이용하여 차량 속도를 제어는 물론 차로 유지를 보조해줍니다.</li>
+            <li class="on">스마트 크루즈 작동 중 고속도로/도시고속도로/자동차전용 도로 내 안전구간 진입 시, 감속 제어를 통해 주행 편의 제공합니다.<br />또한 곡선 구간 진입 시, 감속
+              제어를 통해 주행
               편의를 제공합니다.</li>
           </ul>
         </div>
@@ -150,11 +154,11 @@
       <div id="technologySection">
         <div class="sectionTitle">TECHNOLOGY<br /><span>운전자 성향에 최적화된 주행모드를 제공</span></div>
         <div class="outerBox">
-          <div class="innerBox innerBoxImg">
+          <div class="innerBox innerBoxImg02">
             <!-- 이미지 넣기 -->
           </div>
 
-          <div class="innerBox">
+          <div class="innerBox" id="techInnerBox">
             <h2>다양한 첨단기술들을 통한 새로운 경험</h2>
 
             <p>다양한 실내 분위기를 연출하는 64가지 컬러의 앰비언트 무드램프와<br />
@@ -178,7 +182,7 @@
             <div class="moreBtn_ver2">자세히 보기</div>
           </div>
 
-          <div class="innerBox innerBoxImg">
+          <div class="innerBox innerBoxImg01">
             <!-- 이미지 넣기 -->
           </div>
 
@@ -191,8 +195,8 @@
       <nav id="inFooter">
         <ul id="footerMenu">
           <li>저작권안내</li>
-          <li>개인정보 처리방침</li>
-          <li>이용약관</li>
+          <li class="ftBold">개인정보 처리방침</li>
+          <li class="ftBold">이용약관</li>
           <li>윤리경영 사이버 감사실</li>
           <li>영상정보처리기기 운영관리방침</li>
           <li>사이트맵</li>
@@ -228,7 +232,7 @@
     <!-- footer -->
 
     <div id="sideMenu">
-      <p>+</p>
+      <p><i class="fas fa-plus"></i></p>
       <ul>
         <li>영업점조회</li>
         <li>카탈로그</li>
@@ -237,13 +241,18 @@
         <li>견적내기</li>
       </ul>
     </div>
-    
+
+  </div>
+  
+  <div id="topBtn">
+    <i class="fas fa-arrow-circle-up"></i>
   </div>
   <!-- wrap End  -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="main.js"></script>
+  <script src="js/all.min.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 

@@ -20,12 +20,46 @@ header{
     text-align: center;
     line-height: 100px;
     color: #fff;
+    font-weight: 400;
+}
+#mainMenu span{
+    cursor: pointer;
+}
+#mainMenu span:hover{
+    color: #c9ab7c;
+    transition: .5s;
 }
 #mainMenu li:first-child{
     font-size: 20px;
     font-weight: 600;
 }
-
+#customMenu{
+    position: relative;
+}
+#customMenu #subMenu{
+    width: 100%;
+    height: 0px;
+    background-color: #1f2624;
+    position: absolute;
+    top:100px;
+    left: 0;
+    z-index: 999;
+    overflow: hidden;
+    transition: .5s;
+}
+#subMenu li{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+#subMenu span{
+    font-weight: 300;
+    font-size: 16px;
+}
+#customMenu:hover #subMenu{
+    height: 100px;
+}
 /* subMenu 나중에 */
 
 
@@ -86,7 +120,7 @@ video{
     background-color: #fff;
 }
 #gallerySection{
-    background-color: coral;
+    background-color: #1a1d1c;
     height : 600px;
     overflow: hidden;
     position : relative;
@@ -95,7 +129,7 @@ video{
     width : calc(1120px * 3 + 20px);
     height : 600px;
     position : relative;
-    background-color: crimson;
+    /* background-color: crimson; */
     left: 50%;
     margin-left: calc((1120px * 3 + 20px) / -2);
 }
@@ -105,6 +139,10 @@ video{
     transition: opacity 1s;
     position: relative;
   }
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
 .swiper-slide-active {
     opacity: 1;
   }
@@ -164,7 +202,7 @@ video{
     width: 100%;
     height: 180vh;
     position: relative;
-    background-image: url('../test.jpg');
+    background-image: url('../img/intro.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: 48% 50%;
@@ -214,7 +252,7 @@ video{
     width: 80%;
     margin-left: 10%;
     height: 400px;
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
 
 }
 #outerBoxTop{
@@ -243,6 +281,9 @@ video{
 .innerBox:last-child{
     text-align: right;
 }
+#interiorBox{
+    float: right;
+}
 .innerBox h1{
     font-size: 25px;
     color: #fff;
@@ -252,12 +293,26 @@ video{
     font-size: 18px;
     color: #fff;
 }
-.innerBoxImg{
-    width: 60%;
+.innerBoxImg01{
+    width: 50%;
+    float: right;
     height: 100%;
-    background-color: rgb(127, 255, 159);
+    padding-top: 0;
+    background-image: url('/img/design/exterior.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-
+.innerBoxImg02{
+    width: 50%;
+    float: left;
+    height: 100%;
+    padding-top: 0;
+    background-image: url('/img/design/interior.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 
 #safetySection{
@@ -273,8 +328,11 @@ video{
     width: 80%;
     height: 450px;
     margin-left: 10%;
-    background-color: brown;
+    /* background-color: brown; */
     margin-top: 100px;
+}
+.on{
+    display: none;
 }
 #safetyTitle{
     width: 80%;
@@ -296,6 +354,8 @@ video{
     font-weight: 600;
     letter-spacing: -0.8px;
     position: relative;
+    color:#fff ;
+    opacity: .5;
 }
 #safetyTab li::after{
     content: "";
@@ -303,15 +363,31 @@ video{
     width: 100%;
     left: 0;
     bottom: 0;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #fff;
+    opacity: .3;
+}
+#safetyTab .safetyOn::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    border-bottom: 2px solid #c9ab7c;
+    opacity: 1;
+}
+#safetyTab .safetyOn{
+    color: #c9ab7c;
+    opacity: 1;
 }
 #safetyContent{
     width: 100%;
-    height: 150px;
-    background-color: blueviolet;
+    height: 100px;
     text-align: center;
     padding-top: 50px;
     box-sizing: border-box;
+    color: #fff;
+    opacity: .8;
+    line-height: 1.8;
 }
 
 
@@ -351,8 +427,16 @@ video{
     border-radius: 0 25px 0 25px;
     float: right;
 }
+#techInnerBox{
+    float: right;
+}
+#technologySection .innerBoxImg02{
+    background-image: url('../img/tech_perform/techImg.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 /* technologySection 영역 End */
-
 
 /* performanceSection 영역 Start */
 #performanceSection{
@@ -380,6 +464,12 @@ video{
 #performanceSection .moreBtn_ver2{
     float: left;
 }
+#performanceSection .innerBoxImg01{
+    background-image: url('../img/tech_perform/performance.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 /* performanceSection 영역 End */
 
 /* footer 영역 Start */
@@ -401,12 +491,12 @@ footer{
     justify-content: space-between;
 }
 #footerMenu li{
-    color:#ddd
+    color:rgb(163, 163, 163)
 }
 #footerCustomer{
     float: left;
     margin-top: 50px;
-    color: #ddd;
+    color:rgb(163, 163, 163) 
 }
 #footerCustomer p{
     line-height: 1.6;
@@ -421,6 +511,7 @@ footer{
     background-color: #c9ab7c;
     position: absolute;
     left: -20%;
+    opacity: .5;
 }
 #familyBox{
     float: right;
@@ -430,6 +521,16 @@ select{
     width: 180px;
     height: 40px;
     outline: none;
+    background-color: transparent;
+    color: rgb(163, 163, 163);
+    border: 1px solid rgba(201,171,124,.5);
+}
+option{
+    background-color: black;
+}
+
+.ftBold{
+    font-weight: 500;
 }
 /* footer 영역 End */
 
@@ -440,13 +541,11 @@ select{
     height: 50px;
     overflow: hidden;
     right: 1.8%;
-    top: 0;
-    bottom : 0;
-    margin : auto;
+    bottom : 15.5%;
     background-color: #c9ab7c;
     transition-duration: 1s;
     border-radius: 0 25px 0 25px;
-    z-index: 9999999;
+    z-index: 9;
 }
 #sideMenu:hover{
     height : 300px;
@@ -455,6 +554,9 @@ select{
     width: 100%;
     height: 50px;
     text-align: center;
+    line-height: 50px;
+    color: #1a1d1c;
+    font-size: 20px;
 }
 #sideMenu li{
     width: 100%;
@@ -462,4 +564,22 @@ select{
     line-height: 50px;
     text-align: center;
     cursor: pointer;
+}
+
+#topBtn{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 3.5%;
+    bottom : 7%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 45px;
+    color : #c9ab7c;
+    cursor: pointer;
+    opacity: .5;
+    transition: .5s;
+}
+#topBtn:hover{
+    opacity: 1;
 }
