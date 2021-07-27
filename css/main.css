@@ -7,12 +7,11 @@
 header{
     width: 100%;
     height: 100px;
-    background-color: blue;
+    background-color: #1f2624;
 }
 #mainMenu{
     width: 80%;
     margin: auto;
-    background-color: brown;
     display: flex;
 }
 #mainMenu li{
@@ -197,7 +196,7 @@ video{
 #designSection{
     width: 100%;
     overflow: hidden;
-    background-color:chartreuse;
+    background-color:#1a1d1c;
     position: relative;
 }
 .sectionTitle{
@@ -208,7 +207,8 @@ video{
     height: 50px;
     /* line-height: 50px; */
     margin-top: 50px;
-    background-color:blanchedalmond;
+    /* background-color:blanchedalmond; */
+    color: #fff;
 }
 .outerBox{
     width: 80%;
@@ -225,7 +225,8 @@ video{
     width:200px;
     height: 50px;
     line-height: 50px;
-    border: 1px solid black;
+    border: 1px solid #c9ab7c;
+    color: #c9ab7c;
     text-align: center;
     left : 0;
     right : 0;
@@ -262,6 +263,7 @@ video{
 #safetySection{
     width: 100%;
     overflow: hidden;
+    background-color: #1f2624;
 }
 .sectionTitle span{
     font-size: 25px;
@@ -316,7 +318,9 @@ video{
 
 /* technologySection 영역 Start */
 #technologySection{
-    width: 100%;    
+    width: 100%;
+    background-color: #1a1d1c;
+    overflow: hidden;
 }
 #technologySection .outerBox{
     margin-top: 100px;
@@ -340,7 +344,8 @@ video{
     width:200px;
     height: 50px;
     line-height: 50px;
-    border: 1px solid black;
+    border: 1px solid #c9ab7c;
+    color: #c9ab7c;
     text-align: center;
     margin-top : 50px;
     border-radius: 0 25px 0 25px;
@@ -352,6 +357,8 @@ video{
 /* performanceSection 영역 Start */
 #performanceSection{
     width: 100%;
+    background-color: #1f2624;
+    overflow: hidden;
 }
 #performanceSection .outerBox{
     margin-top: 100px;
@@ -379,7 +386,8 @@ video{
 footer{
     width: 100%;
     overflow: hidden;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
+    background-color: #000000;
 }
 #inFooter{
     width: 80%;
@@ -388,12 +396,17 @@ footer{
 #footerMenu{
     width: 100%;
     height: 40px;
+    margin-top: 15px;
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
+}
+#footerMenu li{
+    color:#ddd
 }
 #footerCustomer{
     float: left;
     margin-top: 50px;
+    color: #ddd;
 }
 #footerCustomer p{
     line-height: 1.6;
@@ -405,7 +418,7 @@ footer{
     content: "";
     width: 140%;
     height: 1px;
-    background-color: red;
+    background-color: #c9ab7c;
     position: absolute;
     left: -20%;
 }
@@ -430,7 +443,7 @@ select{
     top: 0;
     bottom : 0;
     margin : auto;
-    background-color: chartreuse;
+    background-color: #c9ab7c;
     transition-duration: 1s;
     border-radius: 0 25px 0 25px;
     z-index: 9999999;
