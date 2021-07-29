@@ -107,9 +107,9 @@
     .pricebtn{
         position: absolute;
         left: 10%;
-        top: 55%;
+        top: 58%;
         border: 1px solid #fff;
-        /* width 크기를 변경함 */
+        margin-top : 25px;
         /* width: 180px; */
         width : 9.375%;
         text-align: center;
