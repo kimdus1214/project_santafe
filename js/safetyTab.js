@@ -17,5 +17,4 @@ $(document).ready(function () {
          $('#safetyTab > li[data-index!=' + safetyTab + ']').removeClass('safetyOn');
     });
 
-
   });
