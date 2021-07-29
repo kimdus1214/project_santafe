@@ -270,6 +270,13 @@ video{
     right : 0;
     margin : 50px auto;
     border-radius: 0 25px 0 25px;
+    cursor: pointer;
+}
+.moreBtn:hover{
+    background-color: #c9ab7c;
+    color: #1a1d1c;
+    transition: .5s;
+    font-weight: 500;
 }
 .innerBox{
     float: left;
@@ -298,7 +305,7 @@ video{
     float: right;
     height: 100%;
     padding-top: 0;
-    background-image: url('/img/design/exterior.webp');
+    background-image: url('../img/design/exterior.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -308,7 +315,7 @@ video{
     float: left;
     height: 100%;
     padding-top: 0;
-    background-image: url('/img/design/interior.webp');
+    background-image: url('../img/design/interior.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -356,6 +363,7 @@ video{
     position: relative;
     color:#fff ;
     opacity: .5;
+    cursor: pointer;
 }
 #safetyTab li::after{
     content: "";
@@ -365,6 +373,7 @@ video{
     bottom: 0;
     border-bottom: 2px solid #fff;
     opacity: .3;
+    transition: 0.5s;
 }
 #safetyTab .safetyOn::after{
     content: "";
@@ -389,7 +398,12 @@ video{
     opacity: .8;
     line-height: 1.8;
 }
-
+#safetyContent li{
+    display: none;
+}
+#safetyContent .safetyContent_on{
+    display: block;
+}
 
 
 /* technologySection 영역 Start */
@@ -426,6 +440,13 @@ video{
     margin-top : 50px;
     border-radius: 0 25px 0 25px;
     float: right;
+    cursor: pointer;
+}
+.moreBtn_ver2:hover{
+    background-color: #c9ab7c;
+    color: #1a1d1c;
+    transition: .5s;
+    font-weight: 500;
 }
 #techInnerBox{
     float: right;
