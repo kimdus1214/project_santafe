@@ -10,6 +10,9 @@
         height: 100px;
         background-color: #1f2624;
     }
+    #hiddenMenuLeft,#hidden_logo,#hiddenmenuRight{
+        display: none;
+    }
     #mainMenu{
         width: 80%;
         margin: auto;
@@ -71,8 +74,9 @@
     #videoSection{
         position: relative;
         width: 100%;
-        height: 880px;
+        /* height: 880px; */
         overflow: hidden;
+        background-color: #1a1d1c;
     }
     video{
         width: 100%;
@@ -80,8 +84,9 @@
     #videoText{
         /* background-color: cadetblue; */
         position: absolute;
-        top: 25%;
+        top: 50%;
         left: 10%;
+        margin-top: -200px;
         width: 350px;
         height: 200px;
     }
@@ -105,9 +110,10 @@
     .pricebtn{
         position: absolute;
         left: 10%;
-        top: 55%;
+        top: 58%;
+        margin-top: -25px;
         border: 1px solid #fff;
-        width: 180px;
+        width: 11.7%;
         text-align: center;
         line-height: 50px;
         height: 50px;
@@ -125,7 +131,7 @@
         color: #000000;
     }
     #priceBtnRight{
-        left: 22%;
+        left: 22.5%;
         background-color: #fff;
     }
     #priceBtnRight:hover{
@@ -134,28 +140,27 @@
     }
     #gallerySection{
         background-color: #1a1d1c;
-        height : 600px;
+        /* height : 600px; */
         overflow: hidden;
         position : relative;
         padding: 50px 0;
     }
     .swiper-container{
-        width : calc(1120px * 3 + 20px);
-        height : 600px;
+        width : calc(58.33% * 3 + 1.041%);
+        height : auto;
         position : relative;
         /* background-color: crimson; */
         left: 50%;
-        margin-left: calc((1120px * 3 + 20px) / -2);
+        margin-left: calc((58.33% * 3 + 1.041%) / -2);
     }
     .swiper-slide {
-        background-color: cyan;
         opacity: 0.2;
         transition: opacity 1s;
         position: relative;
       }
     .swiper-slide img{
         width: 100%;
-        height: 100%;
+        height: auto;
     }
     .swiper-slide-active {
         opacity: 1;
@@ -167,18 +172,22 @@
         right : 0;
     }
     .swiper-pagination .swiper-pagination-bullet{
-        background-color: transparent;
-        background-image: url("../promotion_slide_pager.png");
+        /* background-color: transparent; */
+        /* background-image: url("../promotion_slide_pager.png"); */
         width : 12px;
         height : 12px;
         margin-right : 6px;
         outline : none;
+        opacity: .4;
     }
     .swiper-pagination .swiper-pagination-bullet:last-child{
         margin-right : 0;
     }
     .swiper-pagination .swiper-pagination-bullet-active{
-        background-image: url("../promotion_slide_pager_on.png");
+        /* background-image: url("../promotion_slide_pager_on.png"); */
+        background-color: #c9ab7c;
+        opacity: 1;
+
     }
     .swiper-prev,
     .swiper-next {
@@ -200,12 +209,12 @@
      opacity: .5;
     }
     .swiper-prev {
-      left:  50%;
-      margin-left : -590px;
+        left: 32.45%;
+      /* margin-left : -590px; */
     }
     .swiper-next {
-      right: 50%;
-      margin-right : -590px;
+      right: 32.42%;
+      /* margin-right : -590px; */
     }
     .swiper-prev:hover,
     .swiper-next:hover{
@@ -346,7 +355,8 @@
     }
     #safetyVideoWrap{
         width: 80%;
-        height: 450px;
+        /* height: 450px; */
+        overflow: hidden;
         margin-left: 10%;
         /* background-color: brown; */
         margin-top: 100px;
@@ -555,6 +565,7 @@
     }
     #footerCustomer{
         float: left;
+        width: 80%;
         margin-top: 50px;
         color:rgb(163, 163, 163) 
     }
@@ -574,7 +585,7 @@
         opacity: .5;
     }
     #familyBox{
-        float: right;
+        float: left;
         margin-top: 50px;
     }
     select{

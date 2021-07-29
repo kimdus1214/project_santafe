@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/all.min.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/tablet.css">
 
 </head>
 
@@ -23,6 +24,35 @@
   <div id="wrap">
 
     <header>
+      <!-- 태블릿일때 나오는 왼쪽, 로고, 오른쪽 Start-->
+      <div id="hiddenMenuLeft">
+        <div id="toggleBtn"><i class="fas fa-bars"></i></div>
+        <ul id="hiddenMenuLeftWrap">
+          <li><span>DESIGN</span></li>
+          <li><span>SAFETY</span></li>
+          <li><span>TECHNOLOGY</span></li>
+          <li><span>PERFORMANCE</span></li>
+          <li><span>GALLERY</span></li>
+          <li><span>CUSTOMER</span>
+          <li class="hidden_subMenu"><span>차량부품상담</span>
+          <li class="hidden_subMenu"><span>1:1 문의하기</span>
+        </ul>
+      </div>     
+
+      <div id="hidden_logo">SANTA FE</div>
+
+      <div id="hiddenmenuRight">
+        <div id="plusBtn"><i class="fas fa-plus"></i></div>
+        <ul id="hiddenMenuRightWrap">
+          <li>영업점조회</li>
+          <li>카탈로그</li>
+          <li>시승신청</li>
+          <li>상담신청</li>
+          <li>견적내기</li>
+        </ul>
+      </div>
+      <!-- 태블릿일때 나오는 왼쪽, 로고, 오른쪽 End -->
+
       <ul id="mainMenu">
         <li>SANTA FE</li>
         <li><span>DESIGN</span></li>
@@ -138,7 +168,8 @@
           </ul>
 
           <ul id="safetyContent">
-            <li class="safetyContent_on">윈드실드 글라스에 전방 감지 센서(전방 카메라 또는 전방 카메라+전방 레이더)를 통하여 전방 차량/보행 거리 및 상대속도를 판단하여<br />충돌 위험 시 경고문 표시 또는 경고음 등으로
+            <li class="safetyContent_on">윈드실드 글라스에 전방 감지 센서(전방 카메라 또는 전방 카메라+전방 레이더)를 통하여 전방 차량/보행 거리 및 상대속도를
+              판단하여<br />충돌 위험 시 경고문 표시 또는 경고음 등으로
               위험을 운전자에게 알려주며, 필요 시 브레이크를 작동시켜 피해를 줄여줍니다</li>
             <li>고속도로 본선 주행 시 전방 차량과의 거리, 차선 정보, 내비게이션 정보를 이용하여 차량 속도를 제어는 물론 차로 유지를 보조해줍니다.</li>
             <li>스마트 크루즈 작동 중 고속도로/도시고속도로/자동차전용 도로 내 안전구간 진입 시, 감속 제어를 통해 주행 편의 제공합니다.<br />또한 곡선 구간 진입 시, 감속
@@ -246,13 +277,15 @@
       <i class="fas fa-arrow-circle-up"></i>
     </div>
   </div>
-  
-  
+
+
   <!-- wrap End  -->
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.min.js" integrity="sha512-5AcaBUUUU/lxSEeEcruOIghqABnXF8TWqdIDXBZ2SNEtrTGvD408W/ShtKZf0JNjQUfOiRBJP+yHk6Ab2eFw3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.min.js"
+    integrity="sha512-5AcaBUUUU/lxSEeEcruOIghqABnXF8TWqdIDXBZ2SNEtrTGvD408W/ShtKZf0JNjQUfOiRBJP+yHk6Ab2eFw3Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/all.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/safetyTab.js"></script>

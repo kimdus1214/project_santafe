@@ -1,3 +1,687 @@
-@media all and (min-width: 768px) and (max-width: 1023px) {
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    #wrap{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    header{
+        position: relative;
+        width: 100%;
+        height: 80px;
+        padding: 15px 5%;
+        box-sizing: border-box;
+        background-color: #1f2624;
+        display: flex;
+    }
+    #hiddenMenuLeft{
+        display: block;
+    }
+    #mainMenu{
+        display: none;
+    }
+    #toggleBtn{
+        width: 50px;
+        height: 50px;
+        font-size: 35px;
+        color: #fff;
+        line-height: 50px;
+        text-align: center;
+        cursor: pointer;
+    }
+    #hiddenMenuLeftWrap{
+        width: 70%;
+        overflow: hidden;
+        background-color: #1f2624;
+        background-color: wheat;
+        position: absolute;
+        top: 80px;
+        left: 5%;
+        z-index: 999;
+    }
+    #hiddenMenuLeftWrap li{
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        padding-left: 3%;
+        font-weight: 500;
+    }
+    #hiddenMenuLeftWrap span{
+        cursor: pointer;
+    }
+    #hiddenMenuLeftWrap .hidden_subMenu{
+        background-color: #555;
+        padding-left: 5.5%;
+        font-weight: 400;
+    }
+    #hidden_logo{
+        font-size: 35px;
+        color: #fff;
+        font-weight: 600;
+        flex: 6;
+        text-align: center;
+        cursor: pointer;
+    }
+    #hiddenmenuRight{
+        display: block;
+    }
+    #plusBtn{
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: #fff;
+        font-size: 35px;
+        flex: 1;
+        cursor: pointer;
+    }
+    #hiddenMenuRightWrap{
+        width: 40%;
+        overflow: hidden;
+        background-color: #1f2624;
+        background-color: wheat;
+        position: absolute;
+        top: 80px;
+        right: 5%;
+        z-index: 999;
+    }
+    #hiddenMenuRightWrap li{
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        padding-right: 5%;
+        box-sizing: border-box;
+        text-align: end;
+        font-weight: 500;
+    }
+    
+    
+    section{
+        width: 100%;
+        overflow: hidden;
+    }
+    #videoSection{
+        position: relative;
+        width: 100%;
+        /* height: 880px; */
+        overflow: hidden;
+        background-color: #1a1d1c;
+    }
+    video{
+        width: 100%;
+    }
+    #videoText{
+        /* background-color: cadetblue; */
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        margin-top: -180px;
+        width: 350px;
+        height: 200px;
+    }
+    #titleText{
+        font-size: 60px;
+        font-weight: 800;
+        color: #fff;
+    }
+    #subText{
+        font-size: 25px;
+        font-weight: 600;
+        color: #fff;
+        margin-top: 10px;
+    }
+    #priceText{
+        font-size: 25px;
+        font-weight: 400;
+        color: #fff;
+        margin-top: 10px;
+    }
+    .pricebtn{
+        position: absolute;
+        left: 10%;
+        top: 58%;
+        margin-top: -5px;
+        border: 1px solid #fff;
+        width: 11.7%;
+        text-align: center;
+        line-height: 50px;
+        height: 50px;
+        border-radius: 0 25px 0 25px;
+        font-weight: 500;
+        font-size: 18px;
+        transition: .5s;
+        cursor: pointer;
+    }
+    #priceBtnLeft{
+        color: #fff;
+    }
+    #priceBtnLeft:hover{
+        background-color: #fff;
+        color: #000000;
+    }
+    #priceBtnRight{
+        left: 22.5%;
+        background-color: #fff;
+    }
+    #priceBtnRight:hover{
+        color: #fff;
+        background-color: transparent;
+    }
+    #gallerySection{
+        background-color: #1a1d1c;
+        /* height : 600px; */
+        overflow: hidden;
+        position : relative;
+        padding: 50px 0;
+    }
+    .swiper-container{
+        width : calc(58.33% * 3 + 1.041%);
+        height : auto;
+        position : relative;
+        /* background-color: crimson; */
+        left: 50%;
+        margin-left: calc((58.33% * 3 + 1.041%) / -2);
+    }
+    .swiper-slide {
+        opacity: 0.2;
+        transition: opacity 1s;
+        position: relative;
+      }
+    .swiper-slide img{
+        width: 100%;
+        height: auto;
+    }
+    .swiper-slide-active {
+        opacity: 1;
+      }
+    .swiper-pagination {
+        position : absolute;
+        bottom : 0; 
+        left : 0;
+        right : 0;
+    }
+    .swiper-pagination .swiper-pagination-bullet{
+        /* background-color: transparent; */
+        /* background-image: url("../promotion_slide_pager.png"); */
+        width : 12px;
+        height : 12px;
+        margin-right : 6px;
+        outline : none;
+        opacity: .4;
+    }
+    .swiper-pagination .swiper-pagination-bullet:last-child{
+        margin-right : 0;
+    }
+    .swiper-pagination .swiper-pagination-bullet-active{
+        /* background-image: url("../promotion_slide_pager_on.png"); */
+        background-color: #c9ab7c;
+        opacity: 1;
 
+    }
+    .swiper-prev,
+    .swiper-next {
+     width : 30px;
+     height : 30px;
+     font-size: 35px;
+     position : absolute;
+     top : 0;
+     bottom : 0;
+     margin : auto;
+     cursor: pointer;
+     z-index: 9;
+     text-align: center;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     outline: none;
+     color: #c9ab7c;
+     opacity: .5;
+    }
+    .swiper-prev {
+        left: 32.45%;
+      /* margin-left : -590px; */
+    }
+    .swiper-next {
+      right: 32.42%;
+      /* margin-right : -590px; */
+    }
+    .swiper-prev:hover,
+    .swiper-next:hover{
+        opacity: 1;
+    }
+    #introSection{
+        width: 100%;
+        height: 180vh;
+        position: relative;
+        background-image: url('../img/intro.jpg');
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: 48% 50%;
+    }
+    /* 이미지: 1920 x 1080 */
+    .introTextBox{
+        width: 80%;
+        height: 100px;
+        margin-left: 10%;
+        text-align: center;
+        position: absolute;
+    }
+    .introTextBox h2{
+        font-size: 35px;
+        color: #fff;
+    }
+    .introTextBox p{
+        margin-top: 15px;
+        line-height: 1.5;
+        color : #fff;
+    }
+    #introTextBoxTop{
+        top: 200px;
+    }
+    #introTextBoxBot{
+        bottom: 200px;
+    }
+    
+    #designSection{
+        width: 100%;
+        overflow: hidden;
+        background-color:#1a1d1c;
+        position: relative;
+    }
+    .sectionTitle{
+        width: 80%;
+        margin-left: 10%;
+        text-align: center;
+        font-size: 35px;
+        height: 50px;
+        /* line-height: 50px; */
+        margin-top: 50px;
+        /* background-color:blanchedalmond; */
+        color: #fff;
+    }
+    .outerBox{
+        width: 80%;
+        margin-left: 10%;
+        height: 400px;
+        /* background-color: cornflowerblue; */
+    
+    }
+    #outerBoxTop{
+        margin-bottom: 100px;
+        margin-top: 50px;
+    }
+    .moreBtn{
+        width:200px;
+        height: 50px;
+        line-height: 50px;
+        border: 1px solid #c9ab7c;
+        color: #c9ab7c;
+        text-align: center;
+        left : 0;
+        right : 0;
+        margin : 50px auto;
+        border-radius: 0 25px 0 25px;
+        cursor: pointer;
+    }
+    .moreBtn:hover{
+        background-color: #c9ab7c;
+        color: #1a1d1c;
+        transition: .5s;
+        font-weight: 500;
+    }
+    .innerBox{
+        float: left;
+        width: 40%;
+        height: 100%;
+        padding-top: 126px;
+        box-sizing: border-box;
+    }
+    .innerBox:last-child{
+        text-align: right;
+    }
+    #interiorBox{
+        float: right;
+    }
+    .innerBox h1{
+        font-size: 25px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    .innerBox p{
+        font-size: 18px;
+        color: #fff;
+    }
+    .innerBoxImg01{
+        width: 50%;
+        float: right;
+        height: 100%;
+        padding-top: 0;
+        background-image: url('../img/design/exterior.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .innerBoxImg02{
+        width: 50%;
+        float: left;
+        height: 100%;
+        padding-top: 0;
+        background-image: url('../img/design/interior.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    
+    #safetySection{
+        width: 100%;
+        overflow: hidden;
+        background-color: #1f2624;
+    }
+    .sectionTitle span{
+        font-size: 25px;
+        display: block;
+    }
+    #safetyVideoWrap{
+        width: 80%;
+        /* height: 450px; */
+        overflow: hidden;
+        margin-left: 10%;
+        /* background-color: brown; */
+        margin-top: 100px;
+    }
+    .on{
+        display: none;
+    }
+    #safetyTitle{
+        width: 80%;
+        overflow: hidden;
+        margin-top: 50px;
+        margin-left: 10%;
+    }
+    #safetyTab{
+        width: 100%;
+        height: 50px;    
+        display: flex;
+    }
+    #safetyTab li{
+        width: 33.3%;
+        height: 100%;
+        text-align: center;
+        line-height: 50px;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: -0.8px;
+        position: relative;
+        color:#fff ;
+        opacity: .5;
+        cursor: pointer;
+    }
+    #safetyTab li::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        border-bottom: 2px solid #fff;
+        opacity: .3;
+        transition: 0.5s;
+    }
+    #safetyTab .safetyOn::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        border-bottom: 2px solid #c9ab7c;
+        opacity: 1;
+    }
+    #safetyTab .safetyOn{
+        color: #c9ab7c;
+        opacity: 1;
+    }
+    #safetyContent{
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        padding-top: 50px;
+        box-sizing: border-box;
+        color: #fff;
+        opacity: .8;
+        line-height: 1.8;
+    }
+    #safetyContent li{
+        display: none;
+    }
+    #safetyContent .safetyContent_on{
+        display: block;
+    }
+    
+    
+    /* technologySection 영역 Start */
+    #technologySection{
+        width: 100%;
+        background-color: #1a1d1c;
+        overflow: hidden;
+    }
+    #technologySection .outerBox{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        height: 450px;
+    }
+    #technologySection .innerBox{
+        padding-top: 100px;
+        text-align: right;
+    }
+    #technologySection .innerBox h2{
+        font-size: 25px;
+        color: #fff;
+    }
+    #technologySection .innerBox p{
+        margin-top: 25px;
+        font-size: 18px;
+        color: #fff;
+    }
+    .moreBtn_ver2{
+        width:200px;
+        height: 50px;
+        line-height: 50px;
+        border: 1px solid #c9ab7c;
+        color: #c9ab7c;
+        text-align: center;
+        margin-top : 50px;
+        border-radius: 0 25px 0 25px;
+        float: right;
+        cursor: pointer;
+    }
+    .moreBtn_ver2:hover{
+        background-color: #c9ab7c;
+        color: #1a1d1c;
+        transition: .5s;
+        font-weight: 500;
+    }
+    #techInnerBox{
+        float: right;
+    }
+    #technologySection .innerBoxImg02{
+        background-image: url('../img/tech_perform/techImg.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #techAnimateImg{
+        position: relative;
+        left: -1000px;
+    }
+    /* @keyframes techAnimate{
+        from{
+            left: -1000px;
+        }
+        to{
+            left: 0;
+        }
+    } */
+    /* technologySection 영역 End */
+    
+    /* performanceSection 영역 Start */
+    #performanceSection{
+        width: 100%;
+        background-color: #1f2624;
+        overflow: hidden;
+    }
+    #performanceSection .outerBox{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        height: 450px;
+    }
+    #performanceSection .innerBox{
+        padding-top: 100px;
+    }
+    #performanceSection .innerBox h2{
+        font-size: 25px;
+        color: #fff;
+    }
+    #performanceSection .innerBox p{
+        margin-top: 25px;
+        font-size: 18px;
+        color: #fff;
+    }
+    #performanceSection .moreBtn_ver2{
+        float: left;
+    }
+    #performanceSection .innerBoxImg01{
+        background-image: url('../img/tech_perform/performance.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    #perforAnimateImg{
+        position: relative;
+        /* left: -1000px; */
+        right: -1000px;
+    }
+    /* @keyframes perforAnimate{
+        from{
+            right: -1000px;
+        }
+        to{
+            right: 0;
+        }
+    } */
+    /* performanceSection 영역 End */
+    
+    /* footer 영역 Start */
+    footer{
+        width: 100%;
+        overflow: hidden;
+        padding-bottom: 50px;
+        background-color: #000000;
+    }
+    #inFooter{
+        width: 80%;
+        margin-left: 10%;
+    }
+    #footerMenu{
+        width: 100%;
+        height: 40px;
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #footerMenu li{
+        color:rgb(163, 163, 163);
+        cursor: pointer;
+    }
+    #footerCustomer{
+        float: left;
+        width: 80%;
+        margin-top: 50px;
+        color:rgb(163, 163, 163) 
+    }
+    #footerCustomer p{
+        line-height: 1.6;
+    }
+    #inFooterBot{
+        position: relative;
+    }
+    #inFooterBot::after{
+        content: "";
+        width: 140%;
+        height: 1px;
+        background-color: #c9ab7c;
+        position: absolute;
+        left: -20%;
+        opacity: .5;
+    }
+    #familyBox{
+        float: left;
+        margin-top: 50px;
+    }
+    select{
+        width: 180px;
+        height: 40px;
+        outline: none;
+        background-color: transparent;
+        color: rgb(163, 163, 163);
+        border: 1px solid rgba(201,171,124,.5);
+    }
+    option{
+        background-color: black;
+    }
+    
+    .ftBold{
+        font-weight: 500;
+    }
+    /* footer 영역 End */
+    
+    /* sideMenu 영역  */
+    #sideMenu{
+        position: fixed;
+        width: 120px;
+        height: 50px;
+        overflow: hidden;
+        right: 1.8%;
+        bottom : 15.5%;
+        background-color: #c9ab7c;
+        transition-duration: 1s;
+        border-radius: 0 25px 0 25px;
+        z-index: 9;
+    }
+    #sideMenu:hover{
+        height : 300px;
+    }
+    #sideMenu p{
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        color: #1a1d1c;
+        font-size: 20px;
+    }
+    #sideMenu li{
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    #topBtn{
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        right: 3.5%;
+        bottom : 7%;
+        text-align: center;
+        line-height: 50px;
+        font-size: 45px;
+        color : #c9ab7c;
+        cursor: pointer;
+        opacity: .5;
+        transition: .5s;
+        z-index: 999;
+    }
+    #topBtn:hover{
+        opacity: 1;
+    }
 }
