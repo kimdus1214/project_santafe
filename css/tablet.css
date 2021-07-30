@@ -114,10 +114,12 @@
         /* background-color: cadetblue; */
         position: absolute;
         top: 50%;
-        left: 10%;
+        left: 50%;
+        margin-left: -175px;
         margin-top: -180px;
         width: 350px;
         height: 200px;
+        text-align: center;
     }
     #titleText{
         font-size: 60px;
@@ -138,11 +140,12 @@
     }
     .pricebtn{
         position: absolute;
-        left: 10%;
+        left: 52.3%;
+        margin-left: -165px;
         top: 58%;
         margin-top: -5px;
         border: 1px solid #fff;
-        width: 11.7%;
+        min-width: 160px;
         text-align: center;
         line-height: 50px;
         height: 50px;
@@ -155,18 +158,12 @@
     #priceBtnLeft{
         color: #fff;
     }
-    #priceBtnLeft:hover{
-        background-color: #fff;
-        color: #000000;
-    }
     #priceBtnRight{
-        left: 22.5%;
+        left: 52.3%;
+        margin-left: -35px;
         background-color: #fff;
     }
-    #priceBtnRight:hover{
-        color: #fff;
-        background-color: transparent;
-    }
+
     #gallerySection{
         background-color: #1a1d1c;
         /* height : 600px; */
@@ -289,8 +286,7 @@
         position: relative;
     }
     .sectionTitle{
-        width: 80%;
-        margin-left: 10%;
+        width: 100%;
         text-align: center;
         font-size: 35px;
         height: 50px;
@@ -300,15 +296,23 @@
         color: #fff;
     }
     .outerBox{
-        width: 80%;
-        margin-left: 10%;
+        width: 90%;
+        margin-left: 5%;
         height: 400px;
-        /* background-color: cornflowerblue; */
-    
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        /* background-color: cornflowerblue; */    
     }
     #outerBoxTop{
         margin-bottom: 100px;
         margin-top: 50px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #outerBoxTop div{
+        width: 90%;
+        margin-left: 5%;
     }
     .moreBtn{
         width:200px;
@@ -323,24 +327,16 @@
         border-radius: 0 25px 0 25px;
         cursor: pointer;
     }
-    .moreBtn:hover{
-        background-color: #c9ab7c;
-        color: #1a1d1c;
-        transition: .5s;
-        font-weight: 500;
-    }
     .innerBox{
-        float: left;
-        width: 40%;
+        width: 90%;
         height: 100%;
-        padding-top: 126px;
+        margin-left: 5%;
+        padding-top: 20px;
         box-sizing: border-box;
-    }
-    .innerBox:last-child{
-        text-align: right;
+        flex: 1;
     }
     #interiorBox{
-        float: right;
+        text-align: center;
     }
     .innerBox h1{
         font-size: 25px;
@@ -352,9 +348,8 @@
         color: #fff;
     }
     .innerBoxImg01{
-        width: 50%;
-        float: right;
         height: 100%;
+        flex: 3;
         padding-top: 0;
         background-image: url('../img/design/exterior.webp');
         background-size: cover;
@@ -362,9 +357,8 @@
         background-repeat: no-repeat;
     }
     .innerBoxImg02{
-        width: 50%;
-        float: left;
         height: 100%;
+        flex: 3;
         padding-top: 0;
         background-image: url('../img/design/interior.webp');
         background-size: cover;
@@ -409,13 +403,16 @@
         height: 100%;
         text-align: center;
         line-height: 50px;
-        font-size: 18px;
-        font-weight: 600;
+        font-size: 16px;
+        font-weight: 500;
         letter-spacing: -0.8px;
         position: relative;
         color:#fff ;
         opacity: .5;
         cursor: pointer;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space:nowrap;
     }
     #safetyTab li::after{
         content: "";
@@ -441,10 +438,11 @@
         opacity: 1;
     }
     #safetyContent{
-        width: 100%;
+        width: 90%;
         height: 100px;
+        margin-left: 5%;
         text-align: center;
-        padding-top: 50px;
+        padding-top: 45px;
         box-sizing: border-box;
         color: #fff;
         opacity: .8;
@@ -465,14 +463,16 @@
         overflow: hidden;
     }
     #technologySection .outerBox{
+        width: 90%;
+        margin-left: 5%;
+        height: 550px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
         margin-top: 100px;
         margin-bottom: 100px;
-        height: 450px;
     }
-    #technologySection .innerBox{
-        padding-top: 100px;
-        text-align: right;
-    }
+
     #technologySection .innerBox h2{
         font-size: 25px;
         color: #fff;
@@ -489,30 +489,25 @@
         border: 1px solid #c9ab7c;
         color: #c9ab7c;
         text-align: center;
-        margin-top : 50px;
+        margin-top : 35px;
         border-radius: 0 25px 0 25px;
-        float: right;
         cursor: pointer;
-    }
-    .moreBtn_ver2:hover{
-        background-color: #c9ab7c;
-        color: #1a1d1c;
-        transition: .5s;
-        font-weight: 500;
-    }
-    #techInnerBox{
-        float: right;
+        left : 50%;
+        position: relative;
+        margin-left: -100px;
     }
     #technologySection .innerBoxImg02{
+        height: 100%;
+        flex: 3;
         background-image: url('../img/tech_perform/techImg.webp');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     }
-    #techAnimateImg{
+    /* #techAnimateImg{
         position: relative;
         left: -1000px;
-    }
+    } */
     /* @keyframes techAnimate{
         from{
             left: -1000px;
@@ -530,12 +525,14 @@
         overflow: hidden;
     }
     #performanceSection .outerBox{
+        width: 90%;
+        margin-left: 5%;
         margin-top: 100px;
         margin-bottom: 100px;
-        height: 450px;
-    }
-    #performanceSection .innerBox{
-        padding-top: 100px;
+        height: 550px;
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
     }
     #performanceSection .innerBox h2{
         font-size: 25px;
@@ -546,20 +543,17 @@
         font-size: 18px;
         color: #fff;
     }
-    #performanceSection .moreBtn_ver2{
-        float: left;
-    }
     #performanceSection .innerBoxImg01{
+        flex: 3;
         background-image: url('../img/tech_perform/performance.webp');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     }
-    #perforAnimateImg{
+    /* #perforAnimateImg{
         position: relative;
-        /* left: -1000px; */
         right: -1000px;
-    }
+    } */
     /* @keyframes perforAnimate{
         from{
             right: -1000px;
@@ -636,35 +630,9 @@
     
     /* sideMenu 영역  */
     #sideMenu{
-        position: fixed;
-        width: 120px;
-        height: 50px;
-        overflow: hidden;
-        right: 1.8%;
-        bottom : 15.5%;
-        background-color: #c9ab7c;
-        transition-duration: 1s;
-        border-radius: 0 25px 0 25px;
-        z-index: 9;
+        display: none;
     }
-    #sideMenu:hover{
-        height : 300px;
-    }
-    #sideMenu p{
-        width: 100%;
-        height: 50px;
-        text-align: center;
-        line-height: 50px;
-        color: #1a1d1c;
-        font-size: 20px;
-    }
-    #sideMenu li{
-        width: 100%;
-        height: 50px;
-        line-height: 50px;
-        text-align: center;
-        cursor: pointer;
-    }
+    
     
     #topBtn{
         width: 50px;
