@@ -146,10 +146,16 @@ video{
 #videoText{
     /* background-color: cadetblue; */
     position: absolute;
-    top: 25%;
-    left: 10%;
+    /* top: 25%; */
+    /* left: 10%; */
     width: 350px;
     height: 200px;
+    top : 0;
+    bottom : 0;
+    left : 0;
+    right : 0;
+    margin : auto;    
+    text-align: center;
 }
 #titleText{
     font-size: 60px;
@@ -170,12 +176,11 @@ video{
 }
 .pricebtn{
     position: absolute;
-    left: 10%;
+    left: 30%;
     top: 58%;
     border: 1px solid #fff;
-    margin-top : 25px;
-    /* width: 180px; */
-    width : 9.375%;
+    margin-top : 60px;
+    width: 180px;
     text-align: center;
     line-height: 50px;
     height: 50px;
@@ -188,18 +193,12 @@ video{
 #priceBtnLeft{
     color: #fff;
 }
-#priceBtnLeft:hover{
-    background-color: #fff;
-    color: #000000;
-}
+
 #priceBtnRight{
-    left: 22%;
+    left: 48%;
     background-color: #fff;
 }
-#priceBtnRight:hover{
-    color: #fff;
-    background-color: transparent;
-}
+
 #gallerySection{
     background-color: #1a1d1c;
     /* height : 600px; */
@@ -338,13 +337,17 @@ video{
 .outerBox{
     width: 80%;
     margin-left: 10%;
-    height: 400px;
-    /* background-color: cornflowerblue; */
-
+    height: 400px; 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* background-color: red; */
+    align-items: center;
 }
 #outerBoxTop{
     margin-bottom: 100px;
     margin-top: 50px;
+    flex-direction: column-reverse;
 }
 .moreBtn{
     width:200px;
@@ -367,16 +370,20 @@ video{
 }
 .innerBox{
     float: left;
-    width: 40%;
+    /* width: 40%; */
+    width : 100%;
     height: 100%;
-    padding-top: 126px;
+    padding-top: 50px;
     box-sizing: border-box;
+    /* background-color: aquamarine; */
+    text-align: center;
 }
 .innerBox:last-child{
     text-align: right;
 }
 #interiorBox{
     float: right;
+    text-align: center;
 }
 .innerBox h1{
     font-size: 25px;
@@ -388,7 +395,8 @@ video{
     color: #fff;
 }
 .innerBoxImg01{
-    width: 50%;
+    /* width: 50%; */
+    width : 100%;
     float: right;
     height: 100%;
     padding-top: 0;
@@ -398,7 +406,8 @@ video{
     background-repeat: no-repeat;
 }
 .innerBoxImg02{
-    width: 50%;
+    /* width: 50%; */
+    width : 100%;
     float: left;
     height: 100%;
     padding-top: 0;
@@ -503,11 +512,11 @@ video{
 #technologySection .outerBox{
     margin-top: 100px;
     margin-bottom: 100px;
-    height: 450px;
+    height: 450px;   
 }
 #technologySection .innerBox{
-    padding-top: 100px;
-    text-align: right;
+    /* padding-top: 100px; */
+    text-align: center
 }
 #technologySection .innerBox h2{
     font-size: 25px;
@@ -529,16 +538,12 @@ video{
     border-radius: 0 25px 0 25px;
     float: right;
     cursor: pointer;
+    position : absolute;
+    left : 0;
+    right : 0;
+    margin : 30px auto;
 }
-.moreBtn_ver2:hover{
-    background-color: #c9ab7c;
-    color: #1a1d1c;
-    transition: .5s;
-    font-weight: 500;
-}
-#techInnerBox{
-    float: right;
-}
+
 #technologySection .innerBoxImg02{
     background-image: url('../img/tech_perform/techImg.webp');
     background-size: cover;
@@ -547,7 +552,6 @@ video{
 }
 #techAnimateImg{
     position: relative;
-    /* left: -1000px; */
     left : -63%;
 }
 /* @keyframes techAnimate{
@@ -570,9 +574,10 @@ video{
     margin-top: 100px;
     margin-bottom: 100px;
     height: 450px;
+    flex-direction: column-reverse;
 }
 #performanceSection .innerBox{
-    padding-top: 100px;
+    /* padding-top: 100px; */
 }
 #performanceSection .innerBox h2{
     font-size: 25px;
@@ -598,14 +603,7 @@ video{
     /* right: -1000px; */
     right : -63%;
 }
-/* @keyframes perforAnimate{
-    from{
-        right: -1000px;
-    }
-    to{
-        right: 0;
-    }
-} */
+
 /* performanceSection 영역 End */
 
 /* footer 영역 Start */
