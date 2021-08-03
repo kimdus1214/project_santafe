@@ -10,9 +10,10 @@
         height: 100px;
         background-color: #1f2624;
     }
-    #hiddenMenuLeft,#hidden_logo,#hiddenmenuRight{
+    #tabHeader,#tabMenuWrap,#tabRightMenuWrap{
         display: none;
     }
+    
     #mainMenu{
         width: 80%;
         margin: auto;

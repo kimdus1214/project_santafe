@@ -1,4 +1,4 @@
-@media all and (min-width: 768px) and (max-width: 1024px) {
+@media all and (max-width: 768px) {
     #wrap{
         width: 100%;
         overflow: hidden;
@@ -11,7 +11,7 @@
     /* tabHeader */
     #tabHeader{
         width: 100%;
-        height: 100px;
+        height: 50px;
         background-color: #1f2624;
         align-items: center;
         justify-content: space-between;
@@ -24,7 +24,7 @@
         /* background-color: #c9ab7c; */
         text-align: center;
         line-height: 50px;
-        font-size : 35px;
+        font-size : 25px;
         color : #c9ab7c;
         margin-left : 2%;
         cursor: pointer;
@@ -38,7 +38,7 @@
         width : 50px;
         height : 50px;
         /* background-color: #c9ab7c; */
-        font-size: 30px;
+        font-size: 25px;
         text-align: center;
         line-height: 50px;
         color : #c9ab7c;
@@ -50,7 +50,7 @@
     width : 100%;
     height : 100%;
     position : absolute;
-    top : 100px;
+    top : 50px;
     left:0;
     background-color: rgba(0,0,0,.5);
     z-index: 9;
@@ -93,7 +93,7 @@
     #tabRightMenuWrap{
       width : 100%;
       height : 100vh;
-      top : 100px;
+      top : 50px;
       background-color: rgba(0,0,0,.5);
       position : absolute;
       z-index: 9;
@@ -146,45 +146,42 @@
     #videoText{
         /* background-color: cadetblue; */
         position: absolute;
-        top: 50%;
+        top: 13%;
         left: 50%;
         margin-left: -175px;
-        margin-top: -180px;
         width: 350px;
         height: 200px;
         text-align: center;
     }
     #titleText{
-        font-size: 60px;
+        font-size: 40px;
         font-weight: 800;
         color: #fff;
     }
     #subText{
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 600;
         color: #fff;
-        margin-top: 10px;
     }
     #priceText{
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 400;
         color: #fff;
-        margin-top: 10px;
     }
     .pricebtn{
         position: absolute;
-        left: 52.3%;
+        left: 53.3%;
         margin-left: -165px;
         top: 58%;
-        margin-top: -5px;
+        margin-top: 15px;
         border: 1px solid #fff;
         min-width: 160px;
         text-align: center;
-        line-height: 50px;
-        height: 50px;
+        line-height: 40px;
+        height: 40px;
         border-radius: 0 25px 0 25px;
         font-weight: 500;
-        font-size: 18px;
+        font-size: 16px;
         transition: .5s;
         cursor: pointer;
     }
@@ -192,7 +189,7 @@
         color: #fff;
     }
     #priceBtnRight{
-        left: 52.3%;
+        left: 53.3%;
         margin-left: -35px;
         background-color: #fff;
     }
@@ -281,7 +278,7 @@
     }
     #introSection{
         width: 100%;
-        height: 180vh;
+        height: 160vh;
         position: relative;
         background-image: url('../img/intro.jpg');
         background-attachment: fixed;
@@ -297,7 +294,7 @@
         position: absolute;
     }
     .introTextBox h2{
-        font-size: 35px;
+        font-size: 25px;
         color: #fff;
     }
     .introTextBox p{
@@ -377,7 +374,7 @@
         margin-bottom: 20px;
     }
     .innerBox p{
-        font-size: 18px;
+        font-size: 14px;
         color: #fff;
     }
     .innerBoxImg01{
@@ -406,7 +403,7 @@
         background-color: #1f2624;
     }
     .sectionTitle span{
-        font-size: 25px;
+        font-size: 18px;
         display: block;
     }
     #safetyVideoWrap{
@@ -415,7 +412,7 @@
         overflow: hidden;
         margin-left: 10%;
         /* background-color: brown; */
-        margin-top: 100px;
+        margin-top: 50px;
     }
     .on{
         display: none;
@@ -423,7 +420,7 @@
     #safetyTitle{
         width: 80%;
         overflow: hidden;
-        margin-top: 50px;
+        margin-top: 25px;
         margin-left: 10%;
     }
     #safetyTab{
@@ -432,7 +429,7 @@
         display: flex;
     }
     #safetyTab li{
-        width: 33.3%;
+        width: 50%;
         height: 100%;
         text-align: center;
         line-height: 50px;
@@ -457,6 +454,9 @@
         opacity: .3;
         transition: 0.5s;
     }
+    #safetyTab li:last-child{
+        display: none;
+    }
     #safetyTab .safetyOn::after{
         content: "";
         position: absolute;
@@ -475,11 +475,12 @@
         height: 100px;
         margin-left: 5%;
         text-align: center;
-        padding-top: 45px;
+        padding-top: 35px;
         box-sizing: border-box;
         color: #fff;
         opacity: .8;
         line-height: 1.8;
+        font-size: 12px;
     }
     #safetyContent li{
         display: none;
@@ -502,17 +503,17 @@
         text-align: center;
         display: flex;
         flex-direction: column;
-        margin-top: 100px;
+        margin-top: 50px;
         margin-bottom: 100px;
     }
 
     #technologySection .innerBox h2{
-        font-size: 25px;
+        font-size: 20px;
         color: #fff;
     }
     #technologySection .innerBox p{
         margin-top: 25px;
-        font-size: 18px;
+        font-size: 14px;
         color: #fff;
     }
     .moreBtn_ver2{
@@ -552,7 +553,7 @@
     #performanceSection .outerBox{
         width: 90%;
         margin-left: 5%;
-        margin-top: 100px;
+        margin-top: 50px;
         margin-bottom: 100px;
         height: 550px;
         text-align: center;
@@ -560,12 +561,12 @@
         flex-direction: column-reverse;
     }
     #performanceSection .innerBox h2{
-        font-size: 25px;
+        font-size: 20px;
         color: #fff;
     }
     #performanceSection .innerBox p{
         margin-top: 25px;
-        font-size: 18px;
+        font-size: 14px;
         color: #fff;
     }
     #performanceSection .innerBoxImg01{
@@ -589,8 +590,8 @@
         background-color: #000000;
     }
     #inFooter{
-        width: 90%;
-        margin-left: 5%;
+        width: 100%;
+        /* margin-left: 5%; */
         position : relative;
     }
     #footerMenu{
@@ -599,11 +600,16 @@
         margin-top: 18px;
         display: flex;
         justify-content: space-between;
+        flex-wrap:  wrap;
+        align-items: center;
     }
     #footerMenu li{
         color:rgb(163, 163, 163);
         cursor: pointer;
-        font-size: 13px;
+        font-size: 12px;
+        text-align: center;
+        width : 33.3%;
+        height : 30px;
     }
     #footerCustomer{
         float: left;
@@ -614,6 +620,7 @@
     #footerCustomer p{
         line-height: 1.6;
         text-align: center;
+        font-size: 14px;
     }
     #inFooterBot{
         position: relative;
@@ -621,6 +628,9 @@
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
+        margin-top : 28px;
+        width : 90%;
+        margin-left : 5%;
     }
     #inFooterBot::after{
         content: "";

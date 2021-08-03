@@ -17,42 +17,14 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/tablet.css">
+  <link rel="stylesheet" href="css/mobile.css">
 
 </head>
 
 <body>
   <div id="wrap">
 
-    <header>
-      <!-- 태블릿일때 나오는 왼쪽, 로고, 오른쪽 Start-->
-      <div id="hiddenMenuLeft">
-        <div id="toggleBtn"><i class="fas fa-bars"></i></div>
-        <ul id="hiddenMenuLeftWrap">
-          <li><span>DESIGN</span></li>
-          <li><span>SAFETY</span></li>
-          <li><span>TECHNOLOGY</span></li>
-          <li><span>PERFORMANCE</span></li>
-          <li><span>GALLERY</span></li>
-          <li><span>CUSTOMER</span>
-          <li class="hidden_subMenu"><span>차량부품상담</span>
-          <li class="hidden_subMenu"><span>1:1 문의하기</span>
-        </ul>
-      </div>     
-
-      <div id="hidden_logo">SANTA FE</div>
-
-      <div id="hiddenmenuRight">
-        <div id="plusBtn"><i class="fas fa-plus"></i></div>
-        <ul id="hiddenMenuRightWrap">
-          <li>영업점조회</li>
-          <li>카탈로그</li>
-          <li>시승신청</li>
-          <li>상담신청</li>
-          <li>견적내기</li>
-        </ul>
-      </div>
-      <!-- 태블릿일때 나오는 왼쪽, 로고, 오른쪽 End -->
-
+    <header>   
       <ul id="mainMenu">
         <li>SANTA FE</li>
         <li><span>DESIGN</span></li>
@@ -70,6 +42,48 @@
       </ul>
     </header>
     <!-- header -->
+
+    <!-- 태블릿일때 나오는 왼쪽, 로고, 오른쪽 Start-->
+      <!-- tab header -->
+      <header id="tabHeader">
+        <div id="menuBtn">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div id="title">SANTA FE</div>
+        <div id="menuBtnLeft"><i class="fas fa-plus"></i></div>
+      </header>
+      <!-- tab header End-->
+
+      <!-- tab header Menu -->
+      <div id="tabMenuWrap" class="tabMenuWrapNone">
+        <ul id="tabMenu">
+          <li><span>DESIGN</span></li>
+          <li><span>SAFETY</span></li>
+          <li><span>TECHNOLOGY</span></li>
+          <li><span>PERFORMANCE</span></li>
+          <li><span>GALLERY</span></li>
+
+          <li><span>CUSTOMER</span>
+            <ul id="tabMenuSub">
+              <li><span>차량부품상담</span></li>
+              <li><span>1:1 문의하기</span></li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+
+      <div id="tabRightMenuWrap" class="tabMenuWrapNone">
+        <ul id="tabRightMenuBox">
+          <li><span>영업점조회</span></li>
+          <li><span>카탈로그</span></li>
+          <li><span>시승신청</span></li>
+          <li><span>상담신청</span></li>
+          <li><span>견적내기</span></li>
+        </ul>
+      </div>
+      <!-- tab header Menu End-->
+      <!-- 태블릿일때 나오는 왼쪽, 로고, 오른쪽 End -->
 
     <section>
       <div id="videoSection">
@@ -290,6 +304,7 @@
   <script src="js/main.js"></script>
   <script src="js/safetyTab.js"></script>
   <script src="js/animate.js"></script>
+  <script src="js/tab.js"></script>
 
 </body>
 
